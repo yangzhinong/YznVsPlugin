@@ -31,6 +31,7 @@ namespace YznVsPlug.Utils
         static internal string[] GetProjectFilesInSolution()
         {
             ThreadHelper.ThrowIfNotOnUIThread();
+#pragma warning disable VSSDK006
             IVsSolution sol = ServiceProvider.GlobalProvider.GetService(typeof(SVsSolution)) as IVsSolution;
             uint numProjects;
             ErrorHandler.ThrowOnFailure(sol.GetProjectFilesInSolution((uint)__VSGETPROJFILESFLAGS.GPFF_SKIPUNLOADEDPROJECTS, 0, null, out numProjects));

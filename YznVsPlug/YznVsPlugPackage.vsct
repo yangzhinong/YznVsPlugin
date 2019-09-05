@@ -73,13 +73,13 @@
           <ButtonText>Export Excel Dto</ButtonText>
         </Strings>
       </Button>-->
-      <Button guid="guidYznVsPlugPackageCmdSet" id="cmdidRequestParamter2InputDto" priority="0x0100" type="Button">
+      <!--<Button guid="guidYznVsPlugPackageCmdSet" id="cmdidRequestParamter2InputDto" priority="0x0100" type="Button">
         <Parent guid="guidYznVsPlugPackageCmdSet" id="MyMenuGroup" />
         <Icon guid="guidImages3" id="bmpPic1" />
         <Strings>
           <ButtonText>RequestJsonParamter to InputDto</ButtonText>
         </Strings>
-      </Button>
+      </Button>-->
       <Button guid="guidYznVsPlugPackageCmdSet" id="cmdidAbpCoder" priority="0x0100" type="Button">
         <Parent guid="guidYznVsPlugPackageCmdSet" id="MyMenuGroup" />
         <Icon guid="guidImages4" id="bmpPic1" />

@@ -46,6 +46,31 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="AbpCoder.cs" />
+    <Compile Include="BLL\Abp\App\AbpAppDtoMapperProfile.cs" />
+    <Compile Include="BLL\Abp\App\AbpAppExport.cs" />
+    <Compile Include="BLL\Abp\App\AbpAppAbandon.cs" />
+    <Compile Include="BLL\Abp\App\AbpAppImpot.cs" />
+    <Compile Include="BLL\Abp\App\AbpApplication.tpl.cs" />
+    <Compile Include="BLL\Abp\App\AbpAppPost.cs" />
+    <Compile Include="BLL\Abp\App\AbpAppPut.cs" />
+    <Compile Include="BLL\Abp\App\AbpAppGet.cs" />
+    <Compile Include="BLL\Abp\App\AbpAppGetById.cs" />
+    <Compile Include="BLL\Abp\App\AbpApplication.cs" />
+    <Compile Include="BLL\Abp\App\AbpCtlBaseItem.cs" />
+    <Compile Include="BLL\Abp\App\IAbpAppItem.cs" />
+    <Compile Include="BLL\Abp\Ctl\AbpCtlExport.cs" />
+    <Compile Include="BLL\Abp\Ctl\AbpCtlImport.cs" />
+    <Compile Include="BLL\Abp\Ctl\AbpCtlBaseItem.cs" />
+    <Compile Include="BLL\Abp\Ctl\AbpCtlGetById.cs" />
+    <Compile Include="BLL\Abp\Ctl\AbpCtlAbandon.cs" />
+    <Compile Include="BLL\Abp\Ctl\AbpCtlPut.cs" />
+    <Compile Include="BLL\Abp\Ctl\IAbpCtlItem.cs" />
+    <Compile Include="BLL\Abp\Ctl\AbpCtlPost.cs" />
+    <Compile Include="BLL\AbpSolutionBll.cs" />
+    <Compile Include="BLL\Abp\Ctl\AbpCtl.cs" />
+    <Compile Include="BLL\Abp\Ctl\AbpCtlGet.cs" />
+    <Compile Include="BLL\Abp\Manager\AbpManager.cs" />
+    <Compile Include="BLL\Abp\Manager\AbpManager.tpl.cs" />
     <Compile Include="BLL\ExportExcelDtoBll.cs" />
     <Compile Include="BLL\QueryParamDtoBll.cs" />
     <Compile Include="Comment2Display.cs" />
@@ -61,10 +86,30 @@
     <Compile Include="Dlgs\DlgJson2Dto.Designer.cs">
       <DependentUpon>DlgJson2Dto.cs</DependentUpon>
     </Compile>
+    <Compile Include="Dlgs\DlgSelectItem.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dlgs\DlgSelectItem.Designer.cs">
+      <DependentUpon>DlgSelectItem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dlgs\DlgText.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dlgs\DlgText.Designer.cs">
+      <DependentUpon>DlgText.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dlgs\DlgUsingSetting.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dlgs\DlgUsingSetting.Designer.cs">
+      <DependentUpon>DlgUsingSetting.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Enums.Plug.cs" />
     <Compile Include="ExportDto.cs" />
     <Compile Include="Json2Dto.cs" />
     <Compile Include="Models\LineNoAndText.cs" />
     <Compile Include="Models\RequestParamJson.cs" />
+    <Compile Include="Models\VbpCoderSetting.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="RequestParamter2InputDto.cs" />
     <Compile Include="Utils\DteExtends.cs" />
@@ -111,6 +156,15 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Dlgs\DlgJson2Dto.resx">
       <DependentUpon>DlgJson2Dto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dlgs\DlgSelectItem.resx">
+      <DependentUpon>DlgSelectItem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dlgs\DlgText.resx">
+      <DependentUpon>DlgText.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dlgs\DlgUsingSetting.resx">
+      <DependentUpon>DlgUsingSetting.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

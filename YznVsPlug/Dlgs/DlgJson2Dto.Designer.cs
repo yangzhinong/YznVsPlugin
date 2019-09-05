@@ -42,7 +42,7 @@
             // 
             // btnOk
             // 
-            this.btnOk.Location = new System.Drawing.Point(626, 12);
+            this.btnOk.Location = new System.Drawing.Point(628, 56);
             this.btnOk.Name = "btnOk";
             this.btnOk.Size = new System.Drawing.Size(126, 23);
             this.btnOk.TabIndex = 0;
@@ -79,7 +79,7 @@
             // 
             // btnClose
             // 
-            this.btnClose.Location = new System.Drawing.Point(628, 583);
+            this.btnClose.Location = new System.Drawing.Point(628, 3);
             this.btnClose.Name = "btnClose";
             this.btnClose.Size = new System.Drawing.Size(124, 23);
             this.btnClose.TabIndex = 4;
@@ -89,7 +89,7 @@
             // 
             // btnOpenModelFile
             // 
-            this.btnOpenModelFile.Location = new System.Drawing.Point(628, 124);
+            this.btnOpenModelFile.Location = new System.Drawing.Point(630, 168);
             this.btnOpenModelFile.Name = "btnOpenModelFile";
             this.btnOpenModelFile.Size = new System.Drawing.Size(124, 23);
             this.btnOpenModelFile.TabIndex = 5;
@@ -104,7 +104,7 @@
             // 
             // btnExportExcelDto
             // 
-            this.btnExportExcelDto.Location = new System.Drawing.Point(626, 41);
+            this.btnExportExcelDto.Location = new System.Drawing.Point(628, 85);
             this.btnExportExcelDto.Name = "btnExportExcelDto";
             this.btnExportExcelDto.Size = new System.Drawing.Size(126, 23);
             this.btnExportExcelDto.TabIndex = 6;
@@ -114,7 +114,7 @@
             // 
             // btnQueryParamDto
             // 
-            this.btnQueryParamDto.Location = new System.Drawing.Point(626, 70);
+            this.btnQueryParamDto.Location = new System.Drawing.Point(628, 114);
             this.btnQueryParamDto.Name = "btnQueryParamDto";
             this.btnQueryParamDto.Size = new System.Drawing.Size(126, 23);
             this.btnQueryParamDto.TabIndex = 7;
@@ -124,7 +124,7 @@
             // 
             // btnAddModel
             // 
-            this.btnAddModel.Location = new System.Drawing.Point(628, 153);
+            this.btnAddModel.Location = new System.Drawing.Point(630, 197);
             this.btnAddModel.Name = "btnAddModel";
             this.btnAddModel.Size = new System.Drawing.Size(124, 23);
             this.btnAddModel.TabIndex = 8;

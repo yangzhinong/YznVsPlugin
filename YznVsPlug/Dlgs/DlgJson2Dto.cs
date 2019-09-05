@@ -144,7 +144,7 @@ namespace YznVsPlug.Dlgs
             }
             if (openFileDialog1.ShowDialog() == DialogResult.OK)
             {
-                txtSrc.Text = File.ReadAllText(openFileDialog1.FileName);
+                txtSrc.Text = File.ReadAllText(openFileDialog1.FileName).ReplaceLF2CrLF();
             }
         }
 

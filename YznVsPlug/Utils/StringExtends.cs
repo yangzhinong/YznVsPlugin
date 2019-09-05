@@ -40,6 +40,33 @@ namespace YznVsPlug.Utils
             return $"{ s.Substring(0, 1).ToUpper()}{s.Substring(1)}";
         }
 
+        public static string ReplaceLF2CrLF(this string s)
+        {
+            if (string.IsNullOrWhiteSpace(s))
+            {
+                return s;
+            }
+            return Regex.Replace(s, "(?<!\r)\n", "\r\n");
+        }
+
+        public static string ToFirstLettleLcase(this string s)
+        {
+            if (string.IsNullOrWhiteSpace(s))
+            {
+                return s;
+            }
+            return $"{ s.Substring(0, 1).ToLower()}{s.Substring(1)}";
+        }
+
+        public static string ToUnderLineStringcase(this string s)
+        {
+            if (string.IsNullOrWhiteSpace(s))
+            {
+                return s;
+            }
+            return $"_{ s.Substring(0, 1).ToLower()}{s.Substring(1)}";
+        }
+
         public static List<LineNoAndText> GetPropertyLines(this string txt)
         {
             var lst = new List<LineNoAndText>();
