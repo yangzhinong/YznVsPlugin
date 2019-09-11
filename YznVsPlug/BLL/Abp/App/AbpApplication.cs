@@ -147,6 +147,7 @@ namespace YznVsPlug.BLL
         {
             var code = tplDto.Replace("$root.name.space$", AbpSolutionBll.GetRootNameSpace())
                             .Replace("$dtoname$", dtoName)
+                            .Replace("$using$", VbpCoderSetting.GetValue().DtoUsing)
                             .Replace("$dto.name.space$", GetDtoNameSapce());
             if (dtoName.StartsWith("Get") && dtoName.EndsWith("Input"))
             {
